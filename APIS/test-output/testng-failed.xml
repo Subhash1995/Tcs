@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="selenium.APIS.ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
+  <test name="selenium(failed)">
+    <classes>
+      <class name="selenium.APIS.FillDetailsPageTest">
+        <methods>
+          <include name="fillDetailsOfCustomer"/>
+          <include name="navigateToCnfPage"/>
+          <include name="FillDetailsPageTest1"/>
+        </methods>
+      </class> <!-- selenium.APIS.FillDetailsPageTest -->
+      <class name="selenium.APIS.PurchaseConfirmationPageTest">
+        <methods>
+          <include name="purchaseIdVerification"/>
+          <include name="PurchaseConfirmationPageTest1"/>
+        </methods>
+      </class> <!-- selenium.APIS.PurchaseConfirmationPageTest -->
+      <class name="selenium.APIS.ChoseFlightPageTest">
+        <methods>
+          <include name="ChoseFlightPageTest1"/>
+          <include name="ClickonChooseThisFlightbtn"/>
+        </methods>
+      </class> <!-- selenium.APIS.ChoseFlightPageTest -->
+    </classes>
+  </test> <!-- selenium(failed) -->
+</suite> <!-- Failed suite [Suite] -->
